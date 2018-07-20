@@ -3,15 +3,68 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Hello World!</title>
+	<style>
+		*, *:before, *:after {
+			box-sizing: border-box;
+			padding:0;
+			margin:0;
+		}
+		ul {
+			display: block;
+		}
+		li {
+			display: block;
+			font-weight: 900;
+		}
+		li strong {
+			display: inline-block;
+			font-weight: 900;
+			width:5em;
+			text-align: right;
+			margin-right: 0.5em;
+		}
+		li strong:after {
+			content:':';
+		}
+		li span {
+			display: inline-block;
+			font-weight: 400;
+		}
+		.html .hello-world {
+			color:blue;
+		}
+		.css .hello-world {
+			color:green;
+		}
+		.css .hello-world:after {
+			content:'Hello World!';
+		}
+		.js .hello-world {
+			color:red;
+		}
+	</style>
 </head>
 <body>
 
-	<h1>
-	<script>
-		var msg = 'Hello World!';
-		document.write(msg);
-	</script>
-	</h1>
+	<ul>
+		<li class="html">
+			<strong>HTML</strong>
+			<span class="hello-world">Hello World!</span>
+		</li>
+		<li class="css">
+			<strong>CSS</strong>
+			<span class="hello-world"></span>
+		</li>
+		<li class="js">
+			<strong>JS</strong>
+			<span class="hello-world">
+				<script>
+					var msg = 'Hello World!';
+					document.write(msg);
+				</script>
+			</span>
+		</li>
+	</ul>
 
 </body>
 </html>
