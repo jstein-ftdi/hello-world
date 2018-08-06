@@ -2,7 +2,7 @@
   "name": "hello-world",
   "version": "1.0.0",
   "description": "a project for learning languages",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jstein-ftdi/hello-world/issues"
   },
-  "homepage": "https://github.com/jstein-ftdi/hello-world#readme"
+  "homepage": "https://github.com/jstein-ftdi/hello-world#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
