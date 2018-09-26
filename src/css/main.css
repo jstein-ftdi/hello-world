@@ -27,19 +27,21 @@ header, main, footer {
 }
 header {
 	background-color: rgba(204,255,204,0.75);
+	box-shadow: 0 0 1em 0 rgba(0,0,0,0.25);
 	bottom:auto;
-	height:60px;
+	height:80px;
 	z-index:3;
 }
 main {
 	position: absolute;
-	top:60px;
+	top:80px;
 	width:100vw;
 	height:calc( 100vh - 120px );
-	background-color: rgba(255,0,0,0.125);
+	background-color: rgba(255,204,204,0.75);
 }
 footer {
 	background-color: rgba(204,204,255,0.75);
+	box-shadow: 0 0 1em 0 rgba(0,0,0,0.25);
 	top:auto;
 	height:60px;
 	z-index:2;
@@ -54,12 +56,12 @@ section, aside {
 	margin-bottom: 60px;
 }
 section {
-	background-color: rgba(255,204,153,0.5);
-	width:65%;
+	background-color: rgba(255,255,204,0.75);
+	/*width:65%;*/
 	float:left;
 }
 aside {
-	background-color: rgba(153,204,255,0.5);
+	background-color: rgba(204,255,255,0.75);
 	width:35%;
 	float:left;
 }
@@ -89,15 +91,19 @@ li span {
 	font-weight: 400;
 }
 .experiments {
-	border:1px solid grey;
+	border:1px solid rgba(127,127,127,0.5);
 }
 .experiments li {
-	border:1px solid grey;
+	border:1px solid rgba(127,127,127,0.25);
+	background-color: rgba(127,127,127,0.125);
 	padding:0.25em;
+	margin:0.25em;
 }
 .hello-world {
-	background-color: rgba(127,127,127,0.25);
-	padding:0.5em;
+	background-color: rgba(255,255,255,0.75);
+	border-radius: 0.25em;
+	box-shadow: 0 0.125em 0.25em 0 rgba(0,0,0,0.25);
+	padding:0.5em 1em;
 }
 .html .hello-world {
 	color:blue;
