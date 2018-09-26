@@ -5,11 +5,18 @@
 	margin:0;
 	vertical-align:top;
 }
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.6rem;
+	font-family: sans-serif;
+}
 #wrapper {
 	position: relative;
 }
 header, main, footer {
-	padding:1em;
+	padding:0.75em;
 	margin:0;
 	position:fixed;
 	top:0;
@@ -29,8 +36,6 @@ main {
 	top:60px;
 	width:100vw;
 	height:calc( 100vh - 120px );
-	/*margin-bottom: 120px;*/
-	/*padding-bottom: 120px;*/
 	background-color: rgba(255,0,0,0.125);
 }
 footer {
@@ -39,17 +44,27 @@ footer {
 	height:60px;
 	z-index:2;
 }
+header > nav, 
+main > section, 
+main > aside, 
+footer > nav {
+	padding:0.5em 0.75em;
+}
+section, aside {
+	margin-bottom: 60px;
+}
 section {
-	background-color: rgba(255,204,153,0.75);
+	background-color: rgba(255,204,153,0.5);
 	width:65%;
 	float:left;
 }
 aside {
-	background-color: rgba(153,204,255,0.75);
+	background-color: rgba(153,204,255,0.5);
 	width:35%;
 	float:left;
 }
 p {
+	margin-top:0.5em;
 	margin-bottom:1em;
 }
 ul {
@@ -73,6 +88,17 @@ li span {
 	display: inline-block;
 	font-weight: 400;
 }
+.experiments {
+	border:1px solid grey;
+}
+.experiments li {
+	border:1px solid grey;
+	padding:0.25em;
+}
+.hello-world {
+	background-color: rgba(127,127,127,0.25);
+	padding:0.5em;
+}
 .html .hello-world {
 	color:blue;
 }
@@ -84,4 +110,9 @@ li span {
 }
 .js .hello-world {
 	color:red;
+}
+.filler {
+	color:rgba(0,0,0,0.25);
+	margin-top:1em;
+	margin-bottom:2em;
 }
