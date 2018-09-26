@@ -1,5 +1,5 @@
 /*main.css*/
-*, *:before, *:after {
+*, *::before, *::after {
 	box-sizing: border-box;
 	padding:0;
 	margin:0;
@@ -68,6 +68,13 @@ aside {
 p {
 	margin-top:0.5em;
 	margin-bottom:1em;
+}
+code {
+	border-radius: 0.25em;
+	border:1px solid rgba(255,148,204,0.99);
+	background-color: rgba(43,17,72,0.99);
+	color: rgba(148,255,204,0.99);
+	padding:0.25em 0.75em;
 }
 ul {
 	display: block;
