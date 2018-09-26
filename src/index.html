@@ -10,6 +10,51 @@
 			margin:0;
 			vertical-align:top;
 		}
+		#wrapper {
+			position: relative;
+		}
+		header, main, footer {
+			padding:1em;
+			margin:0;
+			position:fixed;
+			top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			z-index:1;
+		}
+		header {
+			background-color: rgba(204,255,204,0.75);
+			bottom:auto;
+			height:60px;
+			z-index:3;
+		}
+		main {
+			position: absolute;
+			top:60px;
+			width:100vw;
+			height:calc( 100vh - 120px );
+			background-color: rgba(255,0,0,0.125);
+		}
+		footer {
+			background-color: rgba(204,204,255,0.75);
+			top:auto;
+			height:60px;
+			z-index:2;
+		}
+		section {
+			background-color: rgba(255,204,153,0.75);
+			width:65%;
+			float:left;
+		}
+		aside {
+			background-color: rgba(153,204,255,0.75);
+			width:35%;
+			float:left;
+		}
+		p {
+			margin-bottom:1em;
+		}
 		ul {
 			display: block;
 		}
@@ -46,6 +91,7 @@
 	</style>
 </head>
 <body>
+	<div id="wrapper">
 
 	<header>
 		<nav><ul><li>Home</li></ul></nav>
@@ -83,12 +129,42 @@
 					</span>
 				</li>
 			</ul>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
 		</section>
+		<aside>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+			<p class="filler"></p>
+		</aside>
 	</main>
 
 	<footer>
 		&copy;2018 by Jeff Stein
 	</footer>
+
+	</div>
+	<script>
+		var fillers = document.querySelectorAll(".filler");
+		fillers.forEach( (para) => {
+			para.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora aliquid animi impedit, neque odio autem, libero beatae, architecto magnam, nesciunt dolor vitae nulla placeat minima. Asperiores velit aliquid voluptatum quibusdam!'
+		} );
+	</script>
 
 </body>
 </html>
